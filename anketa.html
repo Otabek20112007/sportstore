@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="acorpus">
+        <img src="driver.png" alt="фон" class="fon">
+    </div>
+
+    <div class="anketa">
+        <h2 class="title">Анкета водителя</h2>
+
+        <div class="row">
+            <input type="text" class="field" placeholder="Ваше имя" required>
+            <input type="text" class="field" placeholder="Ваша фамилия" required>
+        </div>
+
+        <div class="row">
+            <input type="text" class="field" placeholder="Ваше отчество">
+            <input type="number" class="field" placeholder="Ваш возраст" min="18" max="70">
+        </div>
+
+        <input type="text" class="field full" placeholder="Ваш город" required>
+
+        <div class="row">
+            <select class="field" required>
+                <option value="">Наличие прав</option>
+                <option value="yes">Есть</option>
+                <option value="no">Нет</option>
+            </select>
+
+            <select class="field" required>
+                <option value="">Наличие авто</option>
+                <option value="yes">Есть</option>
+                <option value="no">Нет</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <select class="field" required>
+                <option value="">Готовность к работе</option>
+                <option value="now">Сразу</option>
+                <option value="week">Через неделю</option>
+                <option value="month">Через месяц</option>
+            </select>
+
+            <select class="field" required>
+                <option value="">Время работы</option>
+                <option value="full">Полный день</option>
+                <option value="part">Неполный день</option>
+                <option value="shift">Сменный график</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <input type="number" class="field" placeholder="Желаемая зарплата" min="0">
+            <input type="number" class="field" placeholder="Стаж вождения (лет)" min="0" max="50">
+        </div>
+
+        <div class="row">
+            <input type="tel" class="field" placeholder="Ваш телефон" required>
+            <input type="email" class="field" placeholder="Ваш email" required>
+        </div>
+
+        <select class="field full" required>
+            <option value="">Откуда узнали о нас?</option>
+            <option value="friend">От друга</option>
+            <option value="site">С сайта</option>
+            <option value="ads">Из рекламы</option>
+            <option value="other">Другое</option>
+        </select>
+
+        <textarea class="field full textarea" placeholder="Дополнительные комментарии" rows="3"></textarea>
+
+        <div class="agree">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">Согласие на обработку данных</label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="btn submit">Отправить заявку</button>
+            <button type="reset" class="btn clear">Очистить форму</button>
+        </div>
+    </div>
+</body>
+
+</html>

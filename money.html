@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор заработка - РАБОТА ТЧ</title>
+</head>
+<body>
+    <div class="topbar">
+        <img src="logo.png" alt="" class="logo">
+        <p class="name">РАБОТА ТЧ</p>
+        <p class="podname">грузовое такси</p>
+        <ul class="menu">
+            <li><a href="index.html">Онас</a></li>
+            <li><a href="index.html">Отзывы</a></li>
+            <li><a href="index.html">Гарантируем</a></li>
+            <li><a href="money.html">Заработок</a></li>
+            <li><a href="job.html">Вакансия</a></li>
+        </ul>
+        <ul class="contact">
+            <li class="number"><a href="#">+992 99 009 0969</a></li>
+            <li><a href="#">с 07:00 - 22:00</a></li>
+        </ul>
+        <button class="locationru">
+            <img src="flagru.png" alt="">
+            <img src="vector.png" alt="">
+        </button>
+    </div>
+
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1 class="calculator-title">Калькулятор заработка водителя</h1>
+            <p class="calculator-subtitle">Узнайте, сколько вы сможете зарабатывать с нами</p>
+        </div>
+
+        <div class="calculator-content">
+            <div class="input-group">
+                <label class="input-label">Тип транспорта</label>
+                <select class="input-field select-field" id="vehicleType">
+                    <option value="1.5">ГАЗель (1.5 тонны)</option>
+                    <option value="2">Бычок (2 тонны)</option>
+                    <option value="3">Фургон (3 тонны)</option>
+                    <option value="5">Рефрижератор (5 тонн)</option>
+                    <option value="10">Фура (10 тонн)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Город работы</label>
+                <select class="input-field select-field" id="city">
+                    <option value="1.2">Душанбе</option>
+                    <option value="1.1">Худжанд</option>
+                    <option value="1.0">Курган-Тюбе</option>
+                    <option value="0.9">Куляб</option>
+                    <option value="0.8">Другие города</option>
+                </select>
+            </div>
+
+            <div class="range-container">
+                <div class="range-value" id="hoursValue">20 часов/неделя</div>
+                <input type="range" class="range-slider" id="workHours" min="10" max="60" value="20" step="5">
+            </div>
+
+            <div class="range-container">
+                <div class="range-value" id="experienceValue">1 год опыта</div>
+                <input type="range" class="range-slider" id="experience" min="0" max="10" value="1" step="1">
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Дополнительные опции</label>
+                <div class="checkbox-group">
+                    <div class="checkbox" id="nightWork"></div>
+                    <span>Ночные смены (+15%)</span>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox" id="weekendWork"></div>
+                    <span>Работа в выходные (+20%)</span>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox" id="expedition"></div>
+                    <span>Работа экспедитором (+25%)</span>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <div class="result-title">Ваш предполагаемый заработок</div>
+                <div class="result-amount" id="salaryAmount">0 сомони</div>
+                
+                <div class="result-details">
+                    <div class="detail-item">
+                        <div class="detail-label">В день</div>
+                        <div class="detail-value" id="perDay">0 сомони</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">В неделю</div>
+                        <div class="detail-value" id="perWeek">0 сомони</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">В месяц</div>
+                        <div class="detail-value" id="perMonth">0 сомони</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">В год</div>
+                        <div class="detail-value" id="perYear">0 сомони</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-group">
+                <button class="btn btn-secondary" id="resetBtn">Сбросить</button>
+                <button class="btn btn-primary" id="calculateBtn">Рассчитать точно</button>
+            </div>
+
+            <div class="info-text">
+                * Расчеты являются приблизительными. Фактический заработок может отличаться в зависимости от заказов и сезона.
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
